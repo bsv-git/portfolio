@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srie portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="theme-toggle">
+        <!--<input type="button" id="theme-switch">-->
+        <button id="theme-switch" class="theme-switch-label" aria-pressed="false" aria-label="Toggle theme"></button>
+            <span class="theme-switch-slider"></span>
+        </button>
+    </div>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>SRI VARHDAN</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Data Engineer</h1>
+                <p>Transforming raw data into actionable insights through robust ETL pipelines and scalable data architectures.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-pic.png" alt="profile-photo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate Data Engineer with expertise in building scalable data pipelines, ETL processes, and data warehousing solutions. With a strong foundation in Python, SQL, and cloud technologies, I specialize in transforming complex datasets into clean, actionable insights.</p>
+                        <p>My approach combines technical expertise with business acumen to deliver data solutions that drive informed decision-making. I thrive on solving challenging data problems and optimizing performance across the entire data lifecycle.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h3>5+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>10TB+</h3>
+                                <p>Data Processed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/300x300/2c3e50/ffffff?text=Profile+Photo" alt="Profile Photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-skill="programming">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Bash/Shell</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="databases">
+                        <h3><i class="fas fa-database"></i> Databases & Big Data</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Apache Spark</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Hadoop</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="cloud">
+                        <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>AWS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Google Cloud</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Azure</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="tools">
+                        <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>AWS Glue</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Kubernetes</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Terraform</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="processing">
+                        <h3><i class="fas fa-chart-line"></i> Data Processing</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Pandas</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>NumPy</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>ETL/ELT</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-skill="ml">
+                        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Scikit-learn</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>TensorFlow</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Jupyter</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Weather+Pipeline" alt="Weather Data Pipeline">
+                        </div>
+                        <div class="project-content">
+                            <h3>Automated Weather Data Pipeline</h3>
+                            <p class="project-tech">Python • API Integration • ETL • Cron Scheduling</p>
+                            <p>Built an end-to-end ETL pipeline that fetches real-time weather data from Open-Meteo API, processes hourly metrics, and stores curated CSV datasets. Features automated daily execution via cron jobs and comprehensive logging.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Amazon+Reviews" alt="Amazon Reviews Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h3>Amazon Reviews Data Processing</h3>
+                            <p class="project-tech">Python • Pandas • Data Splitting • CSV Processing</p>
+                            <p>Developed a robust data splitting utility for large Amazon reviews datasets. Implements temporal grouping by year and month, creating organized batch files for efficient analysis and processing of millions of reviews.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-chart-bar"></i> Analysis</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/27ae60/ffffff?text=Data+Warehouse" alt="Data Warehouse">
+                        </div>
+                        <div class="project-content">
+                            <h3>Scalable Data Warehouse Solution</h3>
+                            <p class="project-tech">AWS • Redshift • Airflow • Python</p>
+                            <p>Designed and implemented a cloud-based data warehouse using AWS Redshift, with automated ETL pipelines orchestrated by Apache Airflow. Handles petabyte-scale data with optimized query performance and real-time dashboards.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Architecture</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Real-time+Analytics" alt="Real-time Analytics">
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-time Analytics Platform</h3>
+                            <p class="project-tech">Kafka • Spark Streaming • Elasticsearch • Kibana</p>
+                            <p>Built a real-time analytics platform processing millions of events per second using Apache Kafka and Spark Streaming. Integrated with Elasticsearch and Kibana for instant visualization and alerting capabilities.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Data Engineer</h3>
+                            <p class="company">Orision Solution Llc. • 2022 - Present</p>
+                            <ul>
+                                <li>Built scalable data pipelines processing 1TB+ daily</li>
+                                <li>Designed and maintained AWS-based data infrastructure</li>
+                                <li>Collaborated with data scientists to operationalize ML models</li>
+                                <li>Automated deployment and monitoring using Terraform and CloudWatch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <p class="company">Infosys Pvt Ltd • 2020 - 2022</p>
+                            <ul>
+                                <li>Development and support of banking web applications </li>
+                                <li>Inegrated APIs for managing routing data and dashboard interactions</li>
+                                <li>Took ownership of several UI updates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <p class="company">Infosys Pvt Ltd • 2020 - 2022</p>
+                            <ul>
+                                <li>Development and support of banking web applications </li>
+                                <li>Inegrated APIs for managing routing data and dashboard interactions</li>
+                                <li>Took ownership of several UI updates</li>
+                                <!--<li>Assisted in migrating legacy systems to cloud infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>I'm always interested in new opportunities and exciting data projects. Let's connect!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>srivardhandhora@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (773) 457 3152 </span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chicago, IL</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sri E. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">/home/srieubuntu/portfolio/index.html
